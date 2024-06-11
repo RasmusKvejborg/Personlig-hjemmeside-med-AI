@@ -13,48 +13,11 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Hello World!!!! :)");
 });
 
 const assistantId = "asst_DmX0pcVFwjzOT6HSWN36vGxI";
 
-//------------------------------------------------
-
-// Create a thread when the server starts
-// (async () => {
-//   try {
-//     const thread = await openai.beta.threads.create();
-//     threadId = thread.id;
-//     console.log("Thread created with ID:", threadId);
-//   } catch (error) {
-//     console.error("Error creating thread:", error);
-//   }
-// })();
-
-// app.post("/api/sendMessage", async (req, res) => {
-//   const { input } = req.body.input;
-
-//   try {
-//     // Ensure threadId is available before sending a message
-//     if (!threadId) {
-//       throw new Error("Thread ID is not available");
-//     }
-
-//     const run = await openai.beta.threads.runs.create(threadId, {
-//       assistant_id: "asst_DmX0pcVFwjzOT6HSWN36vGxI",
-//       content: input,
-//     });
-
-//     const response =
-//       run.status === "completed" ? run.choices[0].message.content : "";
-//     res.json({ response });
-//   } catch (error) {
-//     console.error(error);
-//     res.status(500).json({ error: "An error occurred" });
-//   }
-// });
-
-//------------------------------------------------
 // Endpoint to initialize a thread
 app.post("/api/initThread", async (req, res) => {
   try {

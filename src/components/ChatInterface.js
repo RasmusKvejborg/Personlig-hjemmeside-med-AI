@@ -21,12 +21,16 @@ export default function ChatInterface() {
 
   async function initializeThread() {
     try {
-      const response = await fetch("http://localhost:5000/api/initThread", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        "https://hjemmesideapi-faf5889b374d.herokuapp.com/api/initThread",
+        {
+          //locakhost:5000 hvis serveren kører
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       const data = await response.json();
       console.log("Thread initialized with ID:", data.threadId);
       setThreadInitialized(true);
@@ -45,13 +49,16 @@ export default function ChatInterface() {
     setInput("");
 
     try {
-      const response = await fetch("http://localhost:5000/api/sendMessage", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ input }),
-      });
+      const response = await fetch(
+        "https://hjemmesideapi-faf5889b374d.herokuapp.com/api/sendMessage",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ input }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to send message");
