@@ -12,8 +12,7 @@ export function Home() {
           </div>
           <ChatInterface></ChatInterface>
           <p className="text-sm text-center mt-4 text-gray-400">
-            NB! Det skal ikke være let, så den godtager kun specifikke
-            spørgsmål.
+            NB! Den godtager kun specifikke spørgsmål.
           </p>
           {/* <div className="flex justify-center py-10">
             <img
