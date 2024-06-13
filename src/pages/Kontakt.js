@@ -12,10 +12,13 @@ export function Kontakt() {
             <p className="mt-2 text-sm text-white">
               Jeg kan kontaktes på rasmuskvejborg+web@gmail.com eller på +45 81
               2000 72
-            </p>
-            <p className="mt-2 text-sm text-white">
-              "+web" i mailen kan undlades, det er blot for at tracke hvor mine
-              mails kommer fra.
+              <span className="relative group">
+                <span className="ml-2 text-blue-500 cursor-pointer">ℹ️</span>
+                <span className="absolute left-0 bottom-full mb-2 hidden w-40 p-2 text-xs text-white bg-gray-700 rounded group-hover:block">
+                  "+web" i mailen kan undlades, det er blot for at tracke hvor
+                  mine mails kommer fra.
+                </span>
+              </span>
             </p>
             <br></br>
             <p className="mt-2 text-sm text-white">
