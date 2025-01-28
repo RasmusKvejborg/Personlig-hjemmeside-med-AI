@@ -1,8 +1,10 @@
 import { FaLinkedin } from "react-icons/fa";
+import Navbar from "../components/Navbar.js";
 
 export function Kontakt() {
   return (
     <div className="min-h-screen py-4 px-4 sm:px-40 bg-[#202123]">
+      <Navbar />
       <div className="sm:flex sm:items-start sm:justify-between">
         <div className="sm:flex-auto">
           <div className="mt-10">
@@ -22,8 +24,7 @@ export function Kontakt() {
             </p>
             <br></br>
             <p className="mt-2 text-sm text-white">
-              Jeg bor på Grønnegade inde i Århus. Giv lyd hvis du er i området
-              og vil mødes.
+              Jeg bor på Grønnegade inde i Århus. Jeg er altid klar på en kop kaffe og en snak.
             </p>
             <div className="mt-4">
               <a

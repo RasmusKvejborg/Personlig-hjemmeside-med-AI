@@ -1,10 +1,14 @@
 import ChatInterface from "../components/ChatInterface.js";
+import Navbar from "../components/Navbar.js";
+
 
 export function Home() {
   return (
     <div>
       <div className="py-5 min-h-screen">
         <div className="mx-auto max-w-7xl px-2 lg:px-4">
+        <Navbar />
+
           <div className="mx-auto lg:mx-0">
             <p className="mb-8 text-lg text-center">
               Her er min digitale kopi. Spørg løs.
