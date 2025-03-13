@@ -24,7 +24,7 @@ export function Kontakt() {
             </p>
             <br></br>
             <p className="mt-2 text-sm text-white">
-              Jeg bor på Grønnegade inde i Århus. Jeg er altid klar på en kop kaffe og en snak.
+              Jeg bor på Grønnegade inde i Århus.
             </p>
             <div className="mt-4">
               <a
