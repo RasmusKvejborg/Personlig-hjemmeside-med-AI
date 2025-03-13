@@ -20,6 +20,7 @@ function App() {
         <Route path="/Register" element={<Register />} />
         <Route path="/Settings" element={<Settings />} />
         <Route path="/Jan" element={<Jan />} />
+        <Route path="/Ai" element={<Ai />} />
       </Routes>
     </div>
   );
