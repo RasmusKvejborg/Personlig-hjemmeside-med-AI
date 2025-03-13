@@ -3,6 +3,8 @@ import { Home } from "./pages/Home.js";
 import { Statistik } from "./pages/Statistik.js";
 import { Kontakt } from "./pages/Kontakt.js";
 import {Jan} from './pages/Jan.js';
+import {Ai} from "./pages/Ai.js";
+
 
 import Login from "./pages/Login.js";
 import Register from "./pages/Register.js";
